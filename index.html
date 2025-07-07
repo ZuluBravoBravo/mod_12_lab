@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daily Quote Viewer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 2em;
+      background-color: #f9f9f9;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    blockquote {
+      font-size: 1.5em;
+      font-style: italic;
+      margin: 1em auto;
+      max-width: 600px;
+      color: #555;
+    }
+
+    #quoteAuthor {
+      font-size: 1.2em;
+      color: #888;
+      margin-bottom: 2em;
+    }
+
+    button {
+      padding: 0.6em 1.2em;
+      font-size: 1em;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h2>🌟 Daily Quote 🌟</h2>
+
+  <blockquote id="quoteText">Loading...</blockquote>
+
+  <p id="quoteAuthor"></p>
+
+  <button id="newQuoteBtn">Show Another Quote</button>
+
+  <script src="quote.js"></script>
+</body>
+</html>
